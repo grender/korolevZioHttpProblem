@@ -69,7 +69,7 @@ object ZioHttpExample extends ZIOAppDefault {
     )
 
     def route(): HttpApp[Any, Throwable] = {
-      new MyZioHttpKorolev[Any].service(config)
+      new ZioHttpKorolev[Any].service(config)
     }
 
   }
